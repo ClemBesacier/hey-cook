@@ -1,0 +1,265 @@
+// VARIABLES
+
+$grey: #B2B7C6;
+$white: #fff;
+$orange: #FF5C1E;
+
+$font: 'Karla', sans-serif;
+$fontTitle: 'Abril Fatface', cursive;
+
+// GÉNÉRAL
+
+html, body {
+    margin: 0;
+}
+body {
+    font-family: $font;
+}
+
+h1 {
+    font-family: $fontTitle;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.cta {
+    background-color: $orange;
+    color: $white;
+    display: inline-block;
+    padding: 11px 0;
+    border-radius: 5px;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.3s ease;
+    &:hover {
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+    }
+}
+
+// Connexion
+
+section.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .img {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 85vh;
+            padding: 50px;
+            .logo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    color: $grey;
+                }
+            }
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                .create {
+                    margin-bottom: 30px;
+                    width: 100%;
+                }
+                .signin {
+                    color: $white;
+                    transform: translateY(0);
+                    transition: 0.3s ease;
+                    span {
+                        color: $orange;
+                        font-weight: 600;
+                    }
+                    &:hover {
+                        transform: translateY(-3px);
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+    &.signin {
+        .img {
+            &::before {
+                content: "";
+                background-color: black;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0.4;
+            }
+        }
+        .content {
+            display: inherit;
+            align-items: inherit;
+            justify-content: inherit;
+            flex-direction: inherit;
+            position: relative;
+            .logo {
+                margin-bottom: 30px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                input {
+                    color: $white;
+                    border: none;
+                    background-color: inherit;
+                    border-bottom: 1px solid $white;
+                    padding-bottom: 10px;
+                    margin-bottom: 35px;         
+                    &::placeholder {
+                        color: $white !important;
+                    }
+                    &:focus {outline: none;}
+                }
+                input[type=email]::placeholder, input[type=password]::placeholder, input[type=text]::placeholder {
+                    color: $white;
+                }
+            }
+            .signin {
+                position: absolute;
+                bottom: 50px;
+            }
+        }
+    }
+    &.createAccount {
+        .signin-btn {
+            position: inherit !important;
+        }
+    }
+}
+
+// Homepage
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    .toggleMenu{
+        width: 20px;
+        height: 16px;
+        position: relative;
+        span {
+            background-color: black;
+            width: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            &:nth-child(2) {
+                top: 7px;
+                width: 20px;
+            }
+            &:nth-child(3) {
+                top: 14px;
+                width: 15px;
+            }
+        }
+    }
+    .logo {
+        img {
+            width: 55px;
+        }
+    }
+}
+
+section.contentHome {
+    padding: 20px;
+    .name {
+        color: $grey;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    section.search {
+        form {
+            display: flex;
+            input {
+                border: none;
+                background-color: rgba($color: $grey, $alpha: 0.2);
+                border-radius: 5px;
+                width: 100%;
+                margin-right: 5px;
+                padding: 11px 15px;
+                margin-bottom: 3px;
+                letter-spacing: 0.3px;
+            }
+            .filter {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+section.myIngredients {
+    padding: 20px;
+    padding-top: 0;
+    .ingredients {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .ing {
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cta {
+            padding: 11px 25px;
+        }
+    }
+}
+
+section.topWeek {
+    padding: 20px;
+    padding-top: 0;
+}

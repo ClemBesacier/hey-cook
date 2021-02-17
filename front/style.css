@@ -1,0 +1,380 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.cta {
+  background-color: #FF5C1E;
+  color: #fff;
+  display: inline-block;
+  padding: 11px 0;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section.login .img {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+section.login .img .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 85vh;
+  padding: 50px;
+}
+
+section.login .img .content .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.login .img .content .logo p {
+  color: #B2B7C6;
+}
+
+section.login .img .content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section.login .img .content .buttons .create {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+section.login .img .content .buttons .signin {
+  color: #fff;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.login .img .content .buttons .signin span {
+  color: #FF5C1E;
+  font-weight: 600;
+}
+
+section.login .img .content .buttons .signin:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.login.signin .img::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+}
+
+section.login.signin .content {
+  display: inherit;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  position: relative;
+}
+
+section.login.signin .content .logo {
+  margin-bottom: 30px;
+}
+
+section.login.signin .content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+section.login.signin .content form input {
+  color: #fff;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+
+section.login.signin .content form input::-webkit-input-placeholder  {
+  color: #fff !important;
+}
+
+section.login.signin .content form input:-ms-input-placeholder  {
+  color: #fff !important;
+}
+
+section.login.signin .content form input::-ms-input-placeholder  {
+  color: #fff !important;
+}
+
+section.login.signin .content form input::placeholder  {
+  color: #fff !important;
+}
+
+section.login.signin .content form input:focus {
+  outline: none;
+}
+
+section.login.signin .content form input[type=email]::-webkit-input-placeholder, section.login.signin .content form input[type=password]::-webkit-input-placeholder, section.login.signin .content form input[type=text]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+section.login.signin .content form input[type=email]:-ms-input-placeholder, section.login.signin .content form input[type=password]:-ms-input-placeholder, section.login.signin .content form input[type=text]:-ms-input-placeholder {
+  color: #fff;
+}
+
+section.login.signin .content form input[type=email]::-ms-input-placeholder, section.login.signin .content form input[type=password]::-ms-input-placeholder, section.login.signin .content form input[type=text]::-ms-input-placeholder {
+  color: #fff;
+}
+
+section.login.signin .content form input[type=email]::placeholder, section.login.signin .content form input[type=password]::placeholder, section.login.signin .content form input[type=text]::placeholder {
+  color: #fff;
+}
+
+section.login.signin .content .signin {
+  position: absolute;
+  bottom: 50px;
+}
+
+section.login.createAccount .signin-btn {
+  position: inherit !important;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .toggleMenu {
+  width: 20px;
+  height: 16px;
+  position: relative;
+}
+
+header .toggleMenu span {
+  background-color: black;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+}
+
+header .toggleMenu span:nth-child(2) {
+  top: 7px;
+  width: 20px;
+}
+
+header .toggleMenu span:nth-child(3) {
+  top: 14px;
+  width: 15px;
+}
+
+header .logo img {
+  width: 55px;
+}
+
+section.contentHome {
+  padding: 20px;
+}
+
+section.contentHome .name {
+  color: #B2B7C6;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+section.contentHome section.search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.contentHome section.search form input {
+  border: none;
+  background-color: rgba(178, 183, 198, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  margin-right: 5px;
+  padding: 11px 15px;
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
+}
+
+section.contentHome section.search form .filter img {
+  width: 40px;
+}
+
+section.myIngredients {
+  padding: 20px;
+  padding-top: 0;
+}
+
+section.myIngredients .ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.myIngredients .ingredients .ing {
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 12px;
+}
+
+section.myIngredients .ingredients .ing p {
+  font-size: 12px;
+}
+
+section.myIngredients .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.myIngredients .button .cta {
+  padding: 11px 25px;
+}
+
+section.topWeek {
+  padding: 20px;
+  padding-top: 0;
+}
+/*# sourceMappingURL=style.css.map */
