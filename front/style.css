@@ -5,6 +5,7 @@ html, body {
 
 body {
   font-family: "Karla", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -37,13 +38,17 @@ a:hover {
   background-color: #FF5C1E;
   color: #fff;
   display: inline-block;
-  padding: 11px 0;
-  border-radius: 5px;
+  padding: 5px 15px;
+  border-radius: 9px;
   text-align: center;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.cta.grey {
+  background-color: #B2B7C6;
 }
 
 .cta:hover {
@@ -256,13 +261,15 @@ header {
           align-items: center;
 }
 
-header .toggleMenu {
+header .arrow
+.toggleMenu {
   width: 20px;
   height: 16px;
   position: relative;
 }
 
-header .toggleMenu span {
+header .arrow
+.toggleMenu span {
   background-color: black;
   width: 10px;
   position: absolute;
@@ -271,12 +278,14 @@ header .toggleMenu span {
   height: 2px;
 }
 
-header .toggleMenu span:nth-child(2) {
+header .arrow
+.toggleMenu span:nth-child(2) {
   top: 7px;
   width: 20px;
 }
 
-header .toggleMenu span:nth-child(3) {
+header .arrow
+.toggleMenu span:nth-child(3) {
   top: 14px;
   width: 15px;
 }
@@ -500,28 +509,6 @@ section.topWeek .cards .owl-home .card .text .preparation .time p, section.topWe
   color: #B2B7C6;
 }
 
-section.topWeek .cards .owl-dots {
-  text-align: center;
-}
-
-section.topWeek .cards .owl-dots .owl-dot {
-  width: 7px;
-  height: 7px;
-  background-color: #B2B7C6;
-  border-radius: 50%;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  margin: 5px;
-}
-
-section.topWeek .cards .owl-dots .owl-dot.active {
-  background-color: #FF5C1E;
-  width: 12px;
-  border-radius: 25px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
 section.playlist {
   padding: 20px;
   padding-top: 0;
@@ -637,5 +624,505 @@ section.playlist .cards .card .text .preparation .time .picto, section.playlist 
 
 section.playlist .cards .card .text .preparation .time p, section.playlist .cards .card .text .preparation .quantity p {
   color: #B2B7C6;
+}
+
+section.choose {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+section.choose h2 {
+  margin-bottom: 8px;
+}
+
+section.choose .card {
+  background-color: rgba(178, 183, 198, 0.2);
+  padding: 20px;
+  border-radius: 9px;
+  margin-bottom: 8px;
+}
+
+section.choose .card p {
+  text-align: center;
+  color: #B2B7C6;
+  font-size: 14px;
+}
+
+section.choose .button {
+  text-align: right;
+}
+
+section.recents {
+  padding: 0;
+  margin: 0 20px;
+  padding-top: 10px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+section.recents::before {
+  content: "";
+  background-color: rgba(178, 183, 198, 0.2);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+section.recents::after {
+  content: "";
+  background-color: rgba(178, 183, 198, 0.2);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section.recents .ingredients .ing {
+  position: relative;
+}
+
+section.recents .ingredients .ing img {
+  opacity: 0.7;
+}
+
+section.recents .ingredients .ing::before {
+  content: "+";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 30px;
+  z-index: 1;
+}
+
+section.find {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+section.find h2 {
+  margin-bottom: 10px;
+}
+
+section.find section.search {
+  margin-bottom: 20px;
+}
+
+section.find section.search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.find section.search form input {
+  border: none;
+  background-color: rgba(178, 183, 198, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  margin-right: 5px;
+  padding: 11px 15px;
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
+}
+
+section.find .products p {
+  color: #FF5C1E;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .products p::after {
+  content: "→";
+  position: absolute;
+  top: 1px;
+  padding-left: 8px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .products p:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .products p:hover::after {
+  padding-left: 11px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .popup.active {
+  opacity: 1;
+  pointer-events: inherit;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .popup .content {
+  padding: 20px;
+  background-color: #F5F5F5;
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  overflow: scroll;
+  border-radius: 10px;
+}
+
+section.find .popup .content .closeCross {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+section.find .popup .content .closeCross span {
+  background-color: #B2B7C6;
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+section.find .popup .content .closeCross span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+section.find .popup .content section.search {
+  margin-bottom: 20px;
+}
+
+section.find .popup .content section.search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.find .popup .content section.search form input {
+  border: none;
+  background-color: rgba(178, 183, 198, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  margin-right: 5px;
+  padding: 11px 15px;
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
+}
+
+section.find .popup .content .letter {
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+section.find .popup .content .letter:first-child {
+  margin-top: 0;
+}
+
+section.find .popup .content .each {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(178, 183, 198, 0.3);
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .popup .content .each::after {
+  content: "+";
+  color: #FF5C1E;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .popup .content .each.validate {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .popup .content .each.validate::after {
+  content: "√";
+  color: green;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.find .popup .content .each img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.cardsResult {
+  margin-top: 30px;
+}
+
+.cardsResult .card {
+  color: black;
+  background-color: rgba(178, 183, 198, 0.2);
+  border-radius: 7px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.cardsResult .card .heart {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.cardsResult .card .text p {
+  color: #128FAE;
+  font-size: 12px;
+}
+
+.cardsResult .card .text h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cardsResult .card .text .stars img {
+  width: 70px;
+}
+
+.cardsResult .card .text .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardsResult .card .text .rate img {
+  margin-right: 10px;
+}
+
+.cardsResult .card .text .rate .calories {
+  color: black;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.cardsResult .card .text .preparation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardsResult .card .text .preparation .time, .cardsResult .card .text .preparation .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardsResult .card .text .preparation .time .picto, .cardsResult .card .text .preparation .quantity .picto {
+  margin-right: 5px;
+}
+
+.cardsResult .card .text .preparation .time p, .cardsResult .card .text .preparation .quantity p {
+  color: #B2B7C6;
+}
+
+section.recette {
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+section.recette .categ {
+  color: #128FAE;
+  font-size: 13px;
+}
+
+section.recette .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.recette .title .heart {
+  position: relative;
+  top: 3px;
+}
+
+section.recette .calories {
+  margin-bottom: 10px;
+}
+
+section.recette .rate {
+  width: 70px;
+}
+
+section.recette .content {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+section.recette .content .plat {
+  position: absolute;
+  right: -80px;
+  width: 270px;
+  top: calc(50% - 70px);
+}
+
+section.recette .content .time, section.recette .content .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+section.recette .content .time .picto, section.recette .content .quantity .picto {
+  width: 15px;
+  margin-right: 10px;
+}
+
+section.recette .content .time p, section.recette .content .quantity p {
+  font-size: 14px;
+  color: #B2B7C6;
+}
+
+section.recette .ingredients {
+  margin-bottom: 30px;
+}
+
+section.recette .ingredients .owl-ing .owl-stage-outer {
+  margin-bottom: 10px;
+}
+
+section.recette .ingredients .owl-ing .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.recette .ingredients .owl-ing .item .ing {
+  width: 60px;
+}
+
+section.recette .ingredients .owl-ing .item .pencil {
+  width: 15px;
+}
+
+section.recette .ingredients .owl-ing .item p {
+  font-size: 14px;
+}
+
+section.theRecette .points li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+section.theRecette .points li::before {
+  content: "•";
+  color: #FF5C1E;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  top: -3px;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dots .owl-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #B2B7C6 !important;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+.owl-dots .owl-dot.active {
+  background-color: #FF5C1E !important;
+  width: 12px;
+  border-radius: 25px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 /*# sourceMappingURL=style.css.map */
