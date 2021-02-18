@@ -376,5 +376,266 @@ section.myIngredients .button .cta {
 section.topWeek {
   padding: 20px;
   padding-top: 0;
+  margin-bottom: 25px;
+}
+
+section.topWeek .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+section.topWeek .title h2 {
+  margin: 0;
+}
+
+section.topWeek .title a {
+  color: #FF5C1E;
+  font-size: 13px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.topWeek .title a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.topWeek .cards .owl-home .card {
+  background-color: rgba(178, 183, 198, 0.2);
+  border-radius: 7px;
+  padding: 10px 20px;
+}
+
+section.topWeek .cards .owl-home .card .heartStroke, section.topWeek .cards .owl-home .card .heart {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+section.topWeek .cards .owl-home .card .heartStroke {
+  opacity: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.topWeek .cards .owl-home .card .heartStroke.unactive {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.topWeek .cards .owl-home .card .heart {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.topWeek .cards .owl-home .card .heart.active {
+  opacity: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.topWeek .cards .owl-home .card .plat {
+  position: relative;
+  right: -30px;
+  top: 10px;
+}
+
+section.topWeek .cards .owl-home .card .text p {
+  color: #128FAE;
+  font-size: 12px;
+}
+
+section.topWeek .cards .owl-home .card .text h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+section.topWeek .cards .owl-home .card .text .stars img {
+  width: 70px;
+}
+
+section.topWeek .cards .owl-home .card .text .calories {
+  color: black;
+  margin-bottom: 0;
+}
+
+section.topWeek .cards .owl-home .card .text .preparation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.topWeek .cards .owl-home .card .text .preparation .time, section.topWeek .cards .owl-home .card .text .preparation .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.topWeek .cards .owl-home .card .text .preparation .time .picto, section.topWeek .cards .owl-home .card .text .preparation .quantity .picto {
+  margin-right: 5px;
+}
+
+section.topWeek .cards .owl-home .card .text .preparation .time p, section.topWeek .cards .owl-home .card .text .preparation .quantity p {
+  color: #B2B7C6;
+}
+
+section.topWeek .cards .owl-dots {
+  text-align: center;
+}
+
+section.topWeek .cards .owl-dots .owl-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #B2B7C6;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+section.topWeek .cards .owl-dots .owl-dot.active {
+  background-color: #FF5C1E;
+  width: 12px;
+  border-radius: 25px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.playlist {
+  padding: 20px;
+  padding-top: 0;
+}
+
+section.playlist .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+section.playlist .title h2 {
+  margin: 0;
+}
+
+section.playlist .title a {
+  color: #FF5C1E;
+  font-size: 13px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.playlist .title a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+section.playlist .cards .card {
+  background-color: rgba(178, 183, 198, 0.2);
+  border-radius: 7px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+section.playlist .cards .card .heart {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+section.playlist .cards .card .text p {
+  color: #128FAE;
+  font-size: 12px;
+}
+
+section.playlist .cards .card .text h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+section.playlist .cards .card .text .stars img {
+  width: 70px;
+}
+
+section.playlist .cards .card .text .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.playlist .cards .card .text .rate img {
+  margin-right: 10px;
+}
+
+section.playlist .cards .card .text .rate .calories {
+  color: black;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+section.playlist .cards .card .text .preparation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.playlist .cards .card .text .preparation .time, section.playlist .cards .card .text .preparation .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.playlist .cards .card .text .preparation .time .picto, section.playlist .cards .card .text .preparation .quantity .picto {
+  margin-right: 5px;
+}
+
+section.playlist .cards .card .text .preparation .time p, section.playlist .cards .card .text .preparation .quantity p {
+  color: #B2B7C6;
 }
 /*# sourceMappingURL=style.css.map */
