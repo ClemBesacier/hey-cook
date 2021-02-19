@@ -174,14 +174,20 @@ section.login {
 // Homepage
 header {
     display: flex;
-    justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
-    .arrow
+    justify-content: center;
+    .arrow {
+        position: absolute;
+        left: 20px;
+    }
     .toggleMenu{
         width: 20px;
         height: 16px;
         position: relative;
+        position: absolute;
+        right: 20px;
+        transform: rotate(180deg);
         span {
             background-color: black;
             width: 10px;
@@ -350,6 +356,7 @@ section.topWeek {
                             }
                             p {
                                 color: $grey;
+                                font-size: 10px;
                             }
                         }
                     }
@@ -672,6 +679,7 @@ section.find {
         align-items: center;
         position: relative;
         margin-bottom: 15px;
+        padding-left: 10px;
         .heart {
             position: absolute;
             right: 15px;
@@ -724,6 +732,7 @@ section.find {
 section.recette {
     padding: 0 20px;
     padding-top: 20px;
+    overflow-x: hidden;
     .categ {
         color: $blue;
         font-size: 13px;
