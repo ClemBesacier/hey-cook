@@ -174,14 +174,20 @@ section.login {
 // Homepage
 header {
     display: flex;
-    justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
-    .arrow
+    justify-content: center;
+    .arrow {
+        position: absolute;
+        left: 20px;
+    }
     .toggleMenu{
         width: 20px;
         height: 16px;
         position: relative;
+        position: absolute;
+        right: 20px;
+        transform: rotate(180deg);
         span {
             background-color: black;
             width: 10px;
@@ -350,6 +356,7 @@ section.topWeek {
                             }
                             p {
                                 color: $grey;
+                                font-size: 10px;
                             }
                         }
                     }
@@ -672,6 +679,7 @@ section.find {
         align-items: center;
         position: relative;
         margin-bottom: 15px;
+        padding-left: 10px;
         .heart {
             position: absolute;
             right: 15px;
@@ -724,6 +732,7 @@ section.find {
 section.recette {
     padding: 0 20px;
     padding-top: 20px;
+    overflow-x: hidden;
     .categ {
         color: $blue;
         font-size: 13px;
@@ -805,6 +814,101 @@ section.theRecette {
                 left: 0;
                 font-size: 20px;
                 top: -3px;
+            }
+        }
+    }
+}
+
+.popupRecette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($color: $white, $alpha: 0.8);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    &.active {
+        opacity: 1;
+        pointer-events: inherit;
+        transition: 0.3s ease;
+    }
+    .contentRecette {
+        background-color: #F5F5F5;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        .closeCrossRecette{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            span{
+                background-color: $grey;
+                width: 20px;
+                height: 1px;
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                transform: rotate(45deg);
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .topImg {
+            position: absolute;
+            top: -25px;
+            left: calc(50% - 25px);
+            p {
+                margin: 0;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .eachAlt {
+            display: flex;
+            align-items: center;
+            background-color: #DDDDDD;
+            border-radius: 10px;
+            padding: 10px;
+            justify-content: space-around;
+            margin-bottom: 15px;
+            
+            .number {
+                background-color: $grey;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #DDDDDD;
+                margin-right: 15px;
+            }
+            .element {
+                text-align: center;
+                margin-right: 15px;
+                p {
+                    margin: 0;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+            .arrow {
+                font-size: 20px;
+                color: grey;
+                margin-right: 30px;
             }
         }
     }

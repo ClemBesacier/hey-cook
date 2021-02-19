@@ -48,3 +48,12 @@ $('.owl-ing').owlCarousel({
         }
     }
 });
+
+// Substitution ingredients
+$('.itemPopup').click(function () {
+    $('.popupRecette').addClass('active');
+});
+
+$('.closeCrossRecette').click(function () {
+    $('.popupRecette').removeClass('active');
+});
