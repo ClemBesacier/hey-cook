@@ -1104,6 +1104,128 @@ section.theRecette .points li::before {
   top: -3px;
 }
 
+.popupRecette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.popupRecette.active {
+  opacity: 1;
+  pointer-events: inherit;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.popupRecette .contentRecette {
+  background-color: #F5F5F5;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.popupRecette .contentRecette .closeCrossRecette {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.popupRecette .contentRecette .closeCrossRecette span {
+  background-color: #B2B7C6;
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.popupRecette .contentRecette .closeCrossRecette span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.popupRecette .contentRecette .topImg {
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 25px);
+}
+
+.popupRecette .contentRecette .topImg p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.popupRecette .contentRecette h2 {
+  margin-top: 40px;
+}
+
+.popupRecette .contentRecette .eachAlt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #DDDDDD;
+  border-radius: 10px;
+  padding: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.popupRecette .contentRecette .eachAlt .number {
+  background-color: #B2B7C6;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #DDDDDD;
+  margin-right: 15px;
+}
+
+.popupRecette .contentRecette .eachAlt .element {
+  text-align: center;
+  margin-right: 15px;
+}
+
+.popupRecette .contentRecette .eachAlt .element p {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.popupRecette .contentRecette .eachAlt .arrow {
+  font-size: 20px;
+  color: grey;
+  margin-right: 30px;
+}
+
 .owl-dots {
   text-align: center;
 }
